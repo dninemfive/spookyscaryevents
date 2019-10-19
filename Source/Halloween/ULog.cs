@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Verse;
+using RimWorld;
 
 namespace D9Halloween
 {
-    class ULog
+    static class ULog
     {
         public static bool DEBUG = true;
         public static string modid = "D9Halloween";
@@ -40,6 +41,11 @@ namespace D9Halloween
         public static void DebugMessage(String s)
         {
             if (DEBUG) Log.Message(prefix + s);
+        }
+        //not strictly log, but too lazy to make its own utility class
+        public static bool IsActiveHere(this Map map, GameCondition_HiddenUnlessNight condition)
+        {
+            return GenCelestial.CurCelestialSunGlow(map) <= condition.LightToBeActive;
         }
     }
 }

@@ -7,8 +7,10 @@ using RimWorld;
 
 namespace D9Halloween
 {
-    public class GameCondition_DarkestNight : GameCondition
+    public class GameCondition_HiddenUnlessNight : GameCondition
     {
+        public float LightToBeActive = 0f;
+        public bool IsActive => base.AffectedMaps.Where(x => GenCelestial.CurCelestialSunGlow(x) <= LightToBeActive).Any();
         
     }
 }
