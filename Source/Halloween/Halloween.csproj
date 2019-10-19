@@ -52,6 +52,7 @@
     <Compile Include="IncidentWorker_MakeGameConditionSilent.cs" />
     <Compile Include="IncidentWorker_QueueEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ULog.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
