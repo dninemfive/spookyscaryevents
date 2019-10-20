@@ -9,6 +9,13 @@ namespace D9Halloween
 {
     class GameCondition_DarkestNight : GameCondition_HalloweenNight
     {
+        public override float[] skytArgs
+        {
+            get
+            {
+                return new float[] { 0f, 0.5f, 0.5f };
+            }
+        }
         public override SkyColorSet ConditionColors
         {
             get
@@ -17,6 +24,5 @@ namespace D9Halloween
             }
         }
         //TemperatureOffset?
-
     }
 }

@@ -8,9 +8,9 @@ using RimWorld;
 
 namespace D9Halloween
 {
-    public class GameCondition_HalloweenNight : GameCondition
+    public abstract class GameCondition_HalloweenNight : GameCondition
     {
-        List<NightEvents.IncidentInfo> events;
+        List<NightEvents.IncidentInfo> events => base.def.GetModExtension<NightEvents>().events;
         public bool WasActiveLastTick;
         public const float midnightHour = 0f;
         public bool IsMidnight => GenLocalDate.HourFloat(base.SingleMap.Tile) == midnightHour;

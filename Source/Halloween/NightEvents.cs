@@ -10,8 +10,8 @@ namespace D9Halloween
     class NightEvents : DefModExtension
     {
 #pragma warning disable CS0649
-        SimpleCurve eventRangePerNight;
-        List<IncidentInfo> events;
+        //public SimpleCurve eventRangePerNight;
+        public List<IncidentInfo> events;
         public class IncidentInfo
         {
             [Flags]
