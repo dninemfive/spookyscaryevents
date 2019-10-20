@@ -38,7 +38,6 @@ namespace D9Halloween
                     for (int t = 0; t < GenDate.TicksPerYear; t++)
                     {
                         int last0 = 0;
-
                     }
                 }
             }

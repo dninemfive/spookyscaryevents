@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using Verse;
 using RimWorld;
 
@@ -11,6 +12,8 @@ namespace D9Halloween
     {
         List<NightEvents.IncidentInfo> events;
         public bool WasActiveLastTick;
+        public const float midnightHour = 0f;
+        public bool IsMidnight => GenLocalDate.HourFloat(base.SingleMap.Tile) == midnightHour;
         public virtual float[] skytArgs //hilarious pun, I know
         {
             get
@@ -36,9 +39,41 @@ namespace D9Halloween
         public override void GameConditionTick()
         {
             base.GameConditionTick();
+            if(!WasActiveLastTick && IsActive(base.SingleMap))
+            {
+                IEnumerable<NightEvents.IncidentInfo> sunsetEvents = events.Where(x => (x.activationTimes & NightEvents.IncidentInfo.ActivationTime.Sunset) != NightEvents.IncidentInfo.ActivationTime.Never);
+                if (sunsetEvents.Any())
+                {
+                    sunsetEvents.TryRandomElementByWeight(x => x.weight, out NightEvents.IncidentInfo res);
+                    if(res.def != null)
+                    {
+                        res.def.Worker.TryExecute(StorytellerUtility.DefaultParmsNow(res.def.category, base.SingleMap));
+                    }
+                }
+            }
+            if (IsMidnight)
+            {
+                IEnumerable<NightEvents.IncidentInfo> midnightEvents = events.Where(x => (x.activationTimes & NightEvents.IncidentInfo.ActivationTime.Midnight) != NightEvents.IncidentInfo.ActivationTime.Never);
+                if (midnightEvents.Any())
+                {
+                    midnightEvents.TryRandomElementByWeight(x => x.weight, out NightEvents.IncidentInfo res);
+                    if (res.def != null)
+                    {
+                        res.def.Worker.TryExecute(StorytellerUtility.DefaultParmsNow(res.def.category, base.SingleMap));
+                    }
+                }
+            }
             if (WasActiveLastTick && !IsActive(base.SingleMap))
             {
-                if((bool)events.Where(x => (x.activationTimes & NightEvents.IncidentInfo.ActivationTime.Sunrise) != NightEvents.IncidentInfo.ActivationTime.Never)?.TryRandomElementByWeight(x => x.weight, out NightEvents.IncidentInfo res)) 
+                IEnumerable<NightEvents.IncidentInfo> sunriseEvents = events.Where(x => (x.activationTimes & NightEvents.IncidentInfo.ActivationTime.Sunrise) != NightEvents.IncidentInfo.ActivationTime.Never);
+                if (sunriseEvents.Any())
+                {
+                    sunriseEvents.TryRandomElementByWeight(x => x.weight, out NightEvents.IncidentInfo res);
+                    if (res.def != null)
+                    {
+                        res.def.Worker.TryExecute(StorytellerUtility.DefaultParmsNow(res.def.category, base.SingleMap));
+                    }
+                }
                 End();
             }
         }
@@ -63,6 +98,6 @@ namespace D9Halloween
         public override SkyTarget? SkyTarget(Map map)
         {
             return new SkyTarget(skytArgs[0], ConditionColors, skytArgs[1], skytArgs[2]);
-        }
+        }        
     }
 }

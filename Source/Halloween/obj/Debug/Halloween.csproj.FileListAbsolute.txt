@@ -1,0 +1,2 @@
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.csprojResolveAssemblyReference.cache
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.csproj.CoreCompileInputs.cache
