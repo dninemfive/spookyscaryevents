@@ -5,7 +5,8 @@ using System.Text;
 
 namespace D9Halloween
 {
-    class ModExtension_ConditionHiddenUnlessActive
+    class GameCondition_NightOverlayWithEvents : GameCondition_NightActiveWithEvents
     {
+
     }
 }

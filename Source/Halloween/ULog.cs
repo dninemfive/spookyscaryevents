@@ -42,10 +42,5 @@ namespace D9Halloween
         {
             if (DEBUG) Log.Message(prefix + s);
         }
-        //not strictly log, but too lazy to make its own utility class
-        public static bool IsActiveHere(this Map map, GameCondition_HiddenUnlessNight condition)
-        {
-            return GenCelestial.CurCelestialSunGlow(map) <= condition.LightToBeActive;
-        }
     }
 }
