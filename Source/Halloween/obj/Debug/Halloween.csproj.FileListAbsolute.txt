@@ -1,2 +1,14 @@
 C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.csprojResolveAssemblyReference.cache
 C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.csproj.CoreCompileInputs.cache
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\Halloween.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\Halloween.pdb
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\Assembly-CSharp.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\UnityEngine.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\TextMeshPro-1.0.55.56.0b11.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\Assembly-CSharp-firstpass.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\NAudio.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\NVorbis.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\bin\Debug\UnityEngine.UI.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.csproj.CopyComplete
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.dll
+C:\Users\dninemfive\Documents\mods\Rimworld\F1.0\SpookyScaryEvents\Source\Halloween\obj\Debug\Halloween.pdb

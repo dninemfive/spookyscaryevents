@@ -13,6 +13,7 @@ namespace D9Halloween
         public static WeatherDef Rain;
         public static WeatherDef RainyThunderstorm;
         public static WeatherDef FoggyRain;
+        public static GameConditionDef D9DarkestNight;
 
         static D9HDefOf()
         {
