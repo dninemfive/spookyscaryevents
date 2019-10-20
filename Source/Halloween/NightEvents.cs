@@ -14,16 +14,17 @@ namespace D9Halloween
         public class IncidentInfo
         {
             [Flags]
-            enum ActivationTime
+            public enum ActivationTime
             {
-                Sunset,
-                Midnight,
-                Sunrise
+                Never = 0,
+                Sunset = 1,
+                Midnight = 2,
+                Sunrise = 3
             }
-            ActivationTime? activationTimes;
-            IntRange? delay;
-            IncidentDef def;
-            float weight;
+            public ActivationTime activationTimes;
+            public IntRange? delay;
+            public IncidentDef def;
+            public float weight;
         }
     }
 }

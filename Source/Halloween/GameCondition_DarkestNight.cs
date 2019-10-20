@@ -2,29 +2,21 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using UnityEngine;
 using Verse;
 
 namespace D9Halloween
 {
-    class GameCondition_DarkestNight : GameCondition_NightActiveWithEvents
+    class GameCondition_DarkestNight : GameCondition_HalloweenNight
     {
-        public override bool AllowEnjoyableOutsideNow(Map map)
+        public override SkyColorSet ConditionColors
         {
-            return !base.IsActive(map);
+            get
+            {
+                return new SkyColorSet(new ColorInt(0, 0, 0).ToColor, Color.white, new Color(0.6f, 0.6f, 0.6f), 0.65f);
+            }
         }
-        #region skygaze
-        public override float SkyGazeChanceFactor(Map map)
-        {
-            return base.IsActive(map) ? 0 : 1;
-        }
-        public override float SkyGazeJoyGainFactor(Map map)
-        {
-            return base.IsActive(map) ? 0 : 1;
-        }
-        #endregion skygaze
         //TemperatureOffset?
-        //SkyTarget
-        //SkyOverlays
-        //GameConditionDraw
+
     }
 }
