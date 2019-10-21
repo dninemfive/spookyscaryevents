@@ -9,6 +9,7 @@ namespace D9Halloween
 {
     class GameCondition_BloodMoon : GameCondition_HalloweenNight
     {
+        List<IntVec3> validSkeletonCells;
         public override float[] skytArgs
         {
             get
@@ -27,11 +28,22 @@ namespace D9Halloween
         public override void GameConditionTick()
         {
             base.GameConditionTick();
+            DoSkeletonPulse();
+            
+        }
+        public void DoSkeletonPulse()
+        {
+            validSkeletonCells = GetValidSkeletonCells();
             //if there aren't too many skeletons,
-                //get a number of skeletons to spawn (e.g. sqrt(max-current))
-                    //for i < n, 
-                        //spawn skeleton in random spot
-                        //spots must be non-stone natural ground in an unroofed area
+            //get a number of skeletons to spawn (e.g. sqrt(max-current))
+            //for i < n, 
+            //spawn skeleton in random spot
+            //spots must be non-stone natural ground in an unroofed area
+        }
+        //should have a cache and dirty routine so we're not getting this too often
+        public List<IntVec3> GetValidSkeletonCells()
+        {
+
         }
         //TemperatureOffset?
     }
