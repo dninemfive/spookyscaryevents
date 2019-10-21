@@ -9,6 +9,7 @@ namespace D9Halloween
 {
     class GameCondition_BloodMoon : GameCondition_HalloweenNight
     {
+        public static int MaxSkeletons => HalloweenSettings.bloodMoonMaxSkeletons;
         List<IntVec3> validSkeletonCells;
         public override float[] skytArgs
         {
@@ -43,7 +44,7 @@ namespace D9Halloween
         //should have a cache and dirty routine so we're not getting this too often
         public List<IntVec3> GetValidSkeletonCells()
         {
-
+            //base.SingleMap.GetEnumerator().Where(x => x.)
         }
         //TemperatureOffset?
     }
