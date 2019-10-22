@@ -44,15 +44,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompFireStarter.cs" />
     <Compile Include="CompParticleSpawner.cs" />
+    <Compile Include="CompProperties_FireStarter.cs" />
     <Compile Include="CompUseEffect_CallRain.cs" />
     <Compile Include="DefOfs.cs" />
     <Compile Include="GameCondition_BloodMoon.cs" />
     <Compile Include="GameCondition_DarkestNight.cs" />
+    <Compile Include="GameCondition_EvilDark.cs" />
     <Compile Include="GameCondition_HalloweenNight.cs" />
     <Compile Include="IncidentExtension.cs" />
     <Compile Include="IncidentWorker_MakeGameConditionSilent.cs" />
     <Compile Include="NightEvents.cs" />
+    <Compile Include="Settings.cs" />
     <Compile Include="Skellington\Pawn_HealthTracker_CantHeal.cs" />
     <Compile Include="Skellington\Pawn_Skeleton.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
