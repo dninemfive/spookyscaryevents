@@ -8,8 +8,21 @@ using RimWorld;
 
 namespace D9Halloween
 {
-    class Pawn_Skeleton : Pawn
+    public class Pawn_Skeleton : Pawn, IThoughtGiver
     {
-        public new Pawn_HealthTracker_CantHeal health;
+        //public new Pawn_HealthTracker_CantHeal health;
+
+        public Thought_Memory GiveObservedThought()
+        {
+            Thought_MemoryObservation thought = ((Thought_MemoryObservation)ThoughtMaker.MakeThought(D9HDefOf.ObservedSpookySkeleton));
+            thought.Target = this;
+            return thought;
+        }
+        public void Crumble()
+        {
+            //spawn dust motes
+            //leave bone pile filth
+            Kill(null);
+        }
     }
 }

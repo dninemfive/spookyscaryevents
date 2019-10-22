@@ -7,7 +7,7 @@ using RimWorld;
 
 namespace D9Halloween
 {
-    class Pawn_HealthTracker_CantHeal : Pawn_HealthTracker
+    public class Pawn_HealthTracker_CantHeal : Pawn_HealthTracker
     {
         private Pawn pawn;
         public Pawn_HealthTracker_CantHeal(Pawn pawn) : base(pawn)
