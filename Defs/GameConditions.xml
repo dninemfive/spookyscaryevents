@@ -2,10 +2,26 @@
 <Defs>
 	<GameConditionDef>
 		<defName>D9DarkestNight</defName>
-		<conditionClass></conditionClass>
+		<conditionClass>D9Halloween.GameCondition_DarkestNight</conditionClass>
 		<label>darkest night</label>
 		<description>This night is dark and full of terrors. Keep an eye out for strange happenings.</description>
 		<endMessage>As dawn approaches, your colonists take stock of the night's events.</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<GameConditionDef>
+		<defName>D9BloodMoon</defName>
+		<conditionClass>D9Halloween.GameCondition_BloodMoon</conditionClass>
+		<label>blood moon</label>
+		<description>A blood moon has risen! Ancient magics summon long-dead bones from their slumber.</description>
+		<endMessage>The blood moon sets. The forces which animated your assailants wane, and their bodies crumble to dust.</endMessage>
+		<canBePermanent>true</canBePermanent>
+	</GameConditionDef>
+	<GameConditionDef>
+		<defName>D9EvilDark</defName>
+		<conditionClass>D9Halloween.GameCondition_EvilDark</conditionClass>
+		<label>evil dark</label>
+		<description>Strange creatures stir in the depths of the darkness. It seems like a good idea to avoid dark areas tonight.</description>
+		<endMessage>As the sun rises and shadows retreat, it seems the things whiched lurked in darkness have left.</endMessage>
 		<canBePermanent>true</canBePermanent>
 	</GameConditionDef>
 </Defs>

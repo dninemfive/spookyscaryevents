@@ -5,19 +5,17 @@
 		<icon>Things/Mote/ThoughtSymbol/Skull</icon>
 		<showBubble>true</showBubble>
 		<thoughtClass>Thought_MemoryObservation</thoughtClass>
-		<durationDays>0.5</durationDays>
+		<durationDays>0.25</durationDays>
 		<stackedEffectMultiplier>0.5</stackedEffectMultiplier>
 		<stackLimit>3</stackLimit>
 		<nullifyingTraits>
 			<li>Psychopath</li>
-			<li>Bloodlust</li>
-			<li>Cannibal</li>
 		</nullifyingTraits>
 		<stages>
 			<li>
-				<label>observed corpse</label>
-				<description>I saw a dead body laying on the ground. It was disturbing.</description>
-				<baseMoodEffect>-4</baseMoodEffect>
+				<label>saw skeleton</label>
+				<description>I saw a spooky, scary skeleton. It sent shivers done my spine.</description>
+				<baseMoodEffect>-8</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
