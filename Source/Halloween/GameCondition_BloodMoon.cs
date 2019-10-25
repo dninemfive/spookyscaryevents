@@ -57,7 +57,7 @@ namespace D9Halloween
         public void SpawnSkeleton()
         {
             IntVec3 cellToSpawnIn = validSkeletonCells.RandomElement();
-            PawnGenerationRequest req = new PawnGenerationRequest(D9HDefOf.D9HPawnKindDef_Skeleton);
+            PawnGenerationRequest req = new PawnGenerationRequest(D9HDefOf.D9SkeletonKind);
             Pawn_Skeleton skele = (Pawn_Skeleton)PawnGenerator.GeneratePawn(req);
             GenSpawn.Spawn(skele, cellToSpawnIn, base.SingleMap);
         }

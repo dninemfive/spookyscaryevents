@@ -15,8 +15,8 @@ namespace D9Halloween
         public static WeatherDef FoggyRain;
         public static ThoughtDef ObservedSpookySkeleton;
         public static GameConditionDef D9DarkestNight;
-        public static ThingDef D9HSkeleton;
-        public static PawnKindDef D9HPawnKindDef_Skeleton;
+        public static ThingDef D9Skeleton;
+        public static PawnKindDef D9SkeletonKind;
 
         static D9HDefOf()
         {

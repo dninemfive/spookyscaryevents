@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="AnimalThingBase">
+	<ThingDef ParentName="AnimalThingBase" Name="D9SkeletonBase">
 		<defName>D9Skeleton</defName>
-		<label>monkey</label>
-		<description>A small primate, the monkey can use its curly tail to grab on to branches, leaving its hands free to do other things. Monkeys are selfish but clever, and can be trained to carry out fairly complex tasks.</description>
+		<label>skeleton</label>
+		<thingClass>Pawn_Skeleton</thingClass>
+		<description>A spooky, scary skeleton.\n\nSometimes known by its formal name Skellington animatus</description>
 		<statBases>
 		  <MoveSpeed>3.8</MoveSpeed>
 		  <Flammability>2</Flammability>
@@ -105,4 +106,46 @@
 		<defName>D9SkeletonHediffs</defName>
 		<hediffGivers/>
 	</HediffGiverSetDef>
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>D9SkeletonKind</defName>
+		<label>skeleton</label>
+		<race>D9Skeleton</race>
+		<combatPower>32</combatPower>
+		<ecoSystemWeight>0</ecoSystemWeight>
+		<wildGroupSize>
+		  <min>0</min>
+		  <max>0</max>
+		</wildGroupSize>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>Pawn/Skeleton</texPath>
+			  <drawSize>1</drawSize>
+			  <shadowData>
+				<volume>(0.3, 0.3, 0.3)</volume>
+				<offset>(0,0,-0.2)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Pawn/Skeleton</texPath>
+			  <drawSize>1</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+	<!-- Firestarter -->
+	<ThingDef ParentName="D9SkeletonBase">
+		<defName>D9Firestarter</defName>
+		<label>.</label>
+		<description/>
+		<thingClass>Pawn</thingClass>
+		<statBases>
+			<Flammability>0.1</Flammability> <!-- still flammable to absorb fire damage -->
+		</statBases>
+		<comps>
+			<li Class="D9Halloween.CompProperties_Firestarter">
+				<!-- leaving all vars to defaults for now -->
+			</li>
+		</comps>
+	</ThingDef>
 </Defs>
