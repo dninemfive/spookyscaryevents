@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+    <identifier>D9SpookyScaryEvents</identifier>
+    <version>0.0.0</version>
+    <dependencies/>
+    <loadAfter/>
+    <suggests>
+		<li>1531882210</li>  <!-- Realistic Darkness -->
+		<li>950475543</li> <!-- Rim of Madness spiders -->
+		<li>1703478386</li>  <!-- SCP -->	
+	</suggests>
+    <showCrossPromotions>true</showCrossPromotions>
+    <manifestUri>https://raw.githubusercontent.com/dninemfive/spookyscaryevents/master/About/Manifest.xml</manifestUri>
+    <downloadUri>https://github.com/dninemfive/spookyscaryevents/releases/latest</downloadUri>
+</Manifest>

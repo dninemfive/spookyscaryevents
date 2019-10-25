@@ -6,4 +6,4 @@
 		<workerClass>DamageWorker_AddInjury</workerClass>
 		<deathMessage>{0} was extinguished.</deathMessage>
 	</DamageDef>
-<Defs>
+</Defs>

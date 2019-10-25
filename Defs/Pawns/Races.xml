@@ -3,7 +3,7 @@
 	<ThingDef ParentName="AnimalThingBase" Name="D9SkeletonBase">
 		<defName>D9Skeleton</defName>
 		<label>skeleton</label>
-		<thingClass>Pawn_Skeleton</thingClass>
+		<thingClass>D9Halloween.Pawn_Skeleton</thingClass>
 		<description>A spooky, scary skeleton.\n\nSometimes known by its formal name Skellington animatus</description>
 		<statBases>
 		  <MoveSpeed>3.8</MoveSpeed>
@@ -137,7 +137,7 @@
 	<ThingDef ParentName="D9SkeletonBase">
 		<defName>D9Firestarter</defName>
 		<label>.</label>
-		<description/>
+		<description>.</description>
 		<thingClass>Pawn</thingClass>
 		<statBases>
 			<Flammability>0.1</Flammability> <!-- still flammable to absorb fire damage -->
