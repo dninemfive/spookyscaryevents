@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<DamageDef ParentName="Flame">
+		<defName>D9FirestarterWaterDmg</defName>
+		<label>water burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<deathMessage>{0} was extinguished.</deathMessage>
+	</DamageDef>
+<Defs>

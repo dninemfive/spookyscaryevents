@@ -144,7 +144,7 @@
 		</statBases>
 		<comps>
 			<li Class="D9Halloween.CompProperties_Firestarter">
-				<!-- leaving all vars to defaults for now -->
+				<rainDamage>D9FirestarterWaterDmg</rainDamage>
 			</li>
 		</comps>
 	</ThingDef>

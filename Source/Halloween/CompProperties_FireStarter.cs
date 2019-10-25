@@ -12,6 +12,7 @@ namespace D9Halloween
         public int fireStartTicks = 250, rainDamageAmt = 10;
         public float precipitationThreshold = 0.1f, fireSize = 10f;
         public bool TakeDamageInRain = true;
+#pragma warning disable CS0649
         public DamageDef rainDamage;
 
         public CompProperties_FireStarter()

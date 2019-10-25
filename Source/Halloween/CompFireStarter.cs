@@ -24,6 +24,7 @@ namespace D9Halloween
         {
             get
             {
+                //todo: return 1 if standing in water
                 WeatherManager man = base.parent.Map.weatherManager;
                 return man.RainRate < 0 ? man.SnowRate < 0 ? 0 : man.SnowRate : man.RainRate;
             }
