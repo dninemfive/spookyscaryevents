@@ -7,6 +7,24 @@
 		<description>This night is dark and full of terrors. Keep an eye out for strange happenings.</description>
 		<endMessage>As dawn approaches, your colonists take stock of the night's events.</endMessage>
 		<canBePermanent>true</canBePermanent>
+		<exclusiveConditions>
+		  <li>D9BloodMoon</li>
+		</exclusiveConditions>
+		<modExtensions>
+			<li Class="D9Halloween.NightEvents">
+				<events>
+					<li>
+						<activationTimes>
+							<li>Sunset</li>
+							<li>Midnight</li>
+						</activationTimes>
+						<delay/>
+						<def>ResourcePodCrash</def>
+						<weight>10</weight>
+					</li>
+				</events>
+			</li>
+		</modExtensions>
 	</GameConditionDef>
 	<GameConditionDef>
 		<defName>D9BloodMoon</defName>
@@ -15,6 +33,9 @@
 		<description>A blood moon has risen! Ancient magics summon long-dead bones from their slumber.</description>
 		<endMessage>The blood moon sets. The forces which animated your assailants wane, and their bodies crumble to dust.</endMessage>
 		<canBePermanent>true</canBePermanent>
+		<exclusiveConditions>
+		  <li>D9DarkestNight</li>
+		</exclusiveConditions>
 	</GameConditionDef>
 	<GameConditionDef>
 		<defName>D9EvilDark</defName>

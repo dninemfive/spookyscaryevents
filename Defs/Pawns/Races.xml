@@ -120,7 +120,7 @@
 		  <li>
 			<bodyGraphicData>
 			  <texPath>Pawn/Skeleton</texPath>
-			  <drawSize>1</drawSize>
+			  <drawSize>1.5</drawSize>
 			  <shadowData>
 				<volume>(0.3, 0.3, 0.3)</volume>
 				<offset>(0,0,-0.2)</offset>
@@ -128,7 +128,7 @@
 			</bodyGraphicData>
 			<dessicatedBodyGraphicData>
 			  <texPath>Pawn/Skeleton</texPath>
-			  <drawSize>1</drawSize>
+			  <drawSize>1.5</drawSize>
 			</dessicatedBodyGraphicData>
 		  </li>
 		</lifeStages>

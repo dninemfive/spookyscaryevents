@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<IncidentDef>
+		<defName>D9H_Incident_DarkestNight</defName>
+		<label>darkest night</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>D9Halloween.IncidentWorker_MakeNightCondition</workerClass>
+		<gameCondition>D9DarkestNight</gameCondition>
+		<letterLabel>Darkest Night</letterLabel>
+		<letterText>This night is dark and full of terrors. Keep an eye out for strange happenings.</letterText>
+		<letterDef>ThreatSmall</letterDef>
+		<baseChance>0.2</baseChance>
+		<earliestDay>10</earliestDay>
+		<minRefireDays>1</minRefireDays>
+		<minDifficulty>1</minDifficulty>
+		<durationDays>
+			<min>1</min>
+			<max>2</max>
+		</durationDays>
+		<!--tale>ToxicFallout</tale-->
+	</IncidentDef>
+	<IncidentDef>
+		<defName>D9H_Incident_BloodMoon</defName>
+		<label>blood moon</label>
+		<category>Misc</category>
+		<targetTags>
+		  <li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>IncidentWorker_MakeGameCondition</workerClass>
+		<gameCondition>D9BloodMoon</gameCondition>
+		<letterLabel>Blood Moon</letterLabel>
+		<letterText>A blood moon has risen! Ancient magics summon long-dead bones from their slumber.</letterText>
+		<letterDef>D9BloodMoonLetter</letterDef>
+		<baseChance>0.15</baseChance>
+		<earliestDay>30</earliestDay>
+		<minRefireDays>14</minRefireDays>
+		<minDifficulty>2</minDifficulty>
+		<durationDays>
+			<min>1</min>
+			<max>2</max>
+		</durationDays>
+		<!--tale>ToxicFallout</tale-->
+	</IncidentDef>	
+	<LetterDef> <!-- recolored ThreatSmall -->
+		<defName>D9BloodMoonLetter</defName>
+		<color>(182, 1, 1)</color>
+		<flashColor>(255, 155, 95)</flashColor>
+		<flashInterval>18</flashInterval>
+		<bounce>true</bounce>
+		<arriveSound>LetterArrive_BadUrgent</arriveSound>
+	</LetterDef>
+</Defs>

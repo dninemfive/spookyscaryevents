@@ -10,7 +10,7 @@ namespace D9Halloween
 {
     public abstract class GameCondition_HalloweenNight : GameCondition
     {
-        List<NightEvents.IncidentInfo> events => base.def.GetModExtension<NightEvents>().events;
+        List<NightEvents.IncidentInfo> events => base.def.GetModExtension<NightEvents>()?.events;
         public bool WasActiveLastTick;
         public const float midnightHour = 0f;
         public bool IsMidnight => GenLocalDate.HourFloat(base.SingleMap.Tile) == midnightHour;
@@ -39,7 +39,7 @@ namespace D9Halloween
         public override void GameConditionTick()
         {
             base.GameConditionTick();
-            if(!WasActiveLastTick && IsActive(base.SingleMap))
+            if(events != null && !WasActiveLastTick && IsActive(base.SingleMap))
             {
                 IEnumerable<NightEvents.IncidentInfo> sunsetEvents = events.Where(x => (x.activationTimes & NightEvents.IncidentInfo.ActivationTime.Sunset) != NightEvents.IncidentInfo.ActivationTime.Never);
                 if (sunsetEvents.Any())
